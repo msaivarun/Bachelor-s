@@ -1,0 +1,84 @@
+.search-results {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.room {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: 10px;
+  width: calc(35% - 40px); /* Adjust width to fit two rooms per row with margin */
+  margin-right: 20px; /* Add margin to the right of each room */
+  margin-left: 20px; /* Add margin to the left of each room */
+}
+
+.room img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+
+.room-info {
+  padding: 10px;
+  background-color: #f9f9f9;
+  border: 1px solid #ddd;
+}
+
+.room-info h3 {
+  margin-top: 0;
+}
+
+.rating {
+  font-weight: bold;
+}
+
+.room-row {
+  margin-bottom: 20px; /* Adjust as needed */
+}
+
+
+
+  .search-container {
+    display: flex;
+    flex-direction: column; /* Align items in a column */
+    justify-content: center;
+    align-items: center;
+    background-image: linear-gradient(rgba(93, 95, 95, 0.9), rgba(61, 61, 60, 0.9)), url('../assets/roombg.jpeg');
+    background-attachment: fixed;
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+  }
+  
+  .title {
+    font-size: 36px; /* Adjust the font size as needed */
+    margin-bottom: 20px;
+    color: linear-gradient(rgba(50, 92, 156, 0.9), rgba(184, 69, 69, 0.9)) !important; /* Add some space below the title */
+  }
+  
+  .search-container > * {
+  margin-bottom: 10px; /* Add space between each element in the container */
+}
+
+  .search-options {
+    height: 30px;
+    width: 300px;
+    display: flex;
+    align-items: center;
+    margin-right: 10px;
+  }
+  
+  .search-button {
+    height: 30px;
+    width: 90px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 0 10px; /* Adjust padding */
+    cursor: pointer;
+    font-size: 14px; 
+  }
+  

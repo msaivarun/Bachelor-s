@@ -1,0 +1,31 @@
+.nearby-stalls-finder {
+    width: 500px;
+    margin: 0 auto;
+  }
+  
+  .nearby-stalls-finder input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  
+  .nearby-stalls-finder ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  .nearby-stalls-finder li {
+    margin-bottom: 10px;
+  }
+  
+  .nearby-stalls-finder h3 {
+    font-size: 20px;
+    margin-top: 0;
+  }
+  
+  .nearby-stalls-finder p {
+    font-size: 16px;
+    margin-bottom: 0;
+  }
+  
