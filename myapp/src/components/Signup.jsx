@@ -1,6 +1,6 @@
 import React, { useState , useContext } from 'react';
 
-function Signup  ({setIsAuthenticated})  {
+function Signup  ()  {
   
   const [formData, setFormData] = useState({
     username: '',
@@ -9,24 +9,24 @@ function Signup  ({setIsAuthenticated})  {
   });
 
   
-  const handleSubmit = (e) => {
-    e.preventDefault();
-    // Add your signup logic here, e.g., make an API request to register the user
-    setIsAuthenticated(true); 
-  };
+  // const handleSubmit = (e) => {
+  //   e.preventDefault();
+  //   // Add your signup logic here, e.g., make an API request to register the user
+  //   setIsAuthenticated(true); 
+  // };
   
-  const handleChange = (e) => {
-    const { name, value } = e.target;
-    setFormData({
-      ...formData,
-      [name]: value,
-    });
-  };
+  // const handleChange = (e) => {
+  //   const { name, value } = e.target;
+  //   setFormData({
+  //     ...formData,
+  //     [name]: value,
+  //   });
+  // };
 
   return (
     <div className="signup-container">
       <h2>Sign Up</h2>
-      <form onSubmit={handleSubmit}>
+      <form >
         <div className="form-group">
           <label htmlFor="username">Username</label>
           <input
@@ -34,7 +34,6 @@ function Signup  ({setIsAuthenticated})  {
             id="username"
             name="username"
             value={formData.username}
-            onChange={handleChange}
             required
           />
         </div>
@@ -45,7 +44,6 @@ function Signup  ({setIsAuthenticated})  {
             id="email"
             name="email"
             value={formData.email}
-            onChange={handleChange}
             required
           />
         </div>
@@ -56,7 +54,6 @@ function Signup  ({setIsAuthenticated})  {
             id="password"
             name="password"
             value={formData.password}
-            onChange={handleChange}
             required
           />
         </div>

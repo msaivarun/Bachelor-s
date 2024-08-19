@@ -13,9 +13,7 @@ import "./styles/Rooms.css";
 import image from "./assets/logo2.jpg"; 
 
 function App() {
-  const [isAuthenticated, setIsAuthenticated] = useState(false);
   return (
-    <AuthProvider> {/* Wrap the entire app with AuthProvider */}
       <Router>
         <nav id="navbar">
           <img src={image} alt="image" width="30" height="30" />
@@ -31,11 +29,10 @@ function App() {
         <Routes>
           <Route path="/" element={<Header />} />
           <Route path="/Rooms" element={<Rooms />} />
-          <Route path="/Signup" element={<Signup setIsAuthenticated={setIsAuthenticated} />} />
-          <Route path="/Signin" element={<Signin setIsAuthenticated={setIsAuthenticated} />} />
+          <Route path="/Signup" element={<Signup />} />
+          <Route path="/Signin" element={<Signin />} />
         </Routes>
       </Router>
-    </AuthProvider>
   );
 }
 

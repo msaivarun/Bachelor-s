@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom'; // Import the Link component
 const Survive = () => {
     return (
         <div >
-            <div className='title'>
+            <div className='title1'>
                 <h2>How To Survive As A Bachelor</h2>
             </div>
             <h3 className='head'>Surviving as a bachelor is simple, but you need to follow some steps.</h3>
