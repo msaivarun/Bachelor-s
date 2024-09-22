@@ -5,6 +5,7 @@ import Survive from "../components/Survive";
 import "../styles/Survive.css";
 import Footer from "../components/Footer";
 import "../styles/Footer.css";
+import "../styles/Header.css";
 const Header = () => {
   return (
     <>

@@ -1,15 +1,15 @@
 // App.js
 import React, { useState } from 'react';
 import { BrowserRouter as Router, Route, Routes, Link } from "react-router-dom";
-import { AuthProvider } from './components/AuthContext';
+// import { AuthProvider } from './components/AuthContext';
 import Header from "./components/Header";
-import Signup from "./components/Signup";
-import Signin from "./components/Signin";
+// import Signup from "./components/Signup";
+// import Signin from "./components/Signin";
 import Rooms from "./components/Rooms";
-import "./styles/Header.css";
-import "./styles/Signup.css";
-import "./styles/Signin.css";
-import "./styles/Rooms.css";
+import Recipes from "./components/Recipes";
+import "./styles/App.css";
+// import "./styles/Signup.css";
+// import "./styles/Signin.css";
 import image from "./assets/logo2.jpg"; 
 
 function App() {
@@ -22,15 +22,16 @@ function App() {
             <Link to="/">Home</Link>
             <Link to="/Rooms">Rooms</Link>
             <Link to="/Recipes">Recipes</Link>
-            <Link to="/Signup">SIGN UP</Link>
-            <Link to="/Signin">SIGN IN</Link>
+            {/* <Link to="/Signup">Sign Up</Link>
+            <Link to="/Signin">Sign In</Link> */}
           </div>
         </nav>
         <Routes>
           <Route path="/" element={<Header />} />
           <Route path="/Rooms" element={<Rooms />} />
-          <Route path="/Signup" element={<Signup />} />
-          <Route path="/Signin" element={<Signin />} />
+          <Route path="/Recipes" element={<Recipes />} />
+          {/* <Route path="/Signup" element={<Signup />} />
+          <Route path="/Signin" element={<Signin />} /> */}
         </Routes>
       </Router>
   );
